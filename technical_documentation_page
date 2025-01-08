@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Technical Documentation Page</title>
+        <link rel="stylesheet" href="technical_documentation_page.css">
+    </head>
+    <body>
+        <nav id="navbar">
+            <header>Documentation Topics</header>
+            <a href="#html_introduction" class="nav-link">HTML introduction</a>
+            <a href="#css_basics" class="nav-link">CSS basics</a>
+            <a href="#api_integration" class="nav-link">API integration</a>
+            <a href="#javascript_fundamentals" class="nav-link">JavaScript fundamentals</a>
+            <a href="#testing-and-debugging" class="nav-link">Testing and debugging</a>
+        </nav>
+        <main id="main-doc">
+            <section id="html_introdcution" class="main-section">
+                <header>HTML Introduction</header>
+                <p>HTML, o Hyper Text Markup Language, is the satandar language used to create web-pages. It defines the basic structure of a web page document using elements and tags</p>
+                <p>HTML consist of an opening tag, content and closing tag. Some important elements include:</p>
+                <code>&lth1&gt;Main heading&lt;/h1&lt;</code>
+                <code>&ltp&gt;Paragraph of text&ltp&gt;</code>
+                <ul>
+                    <li>&lt;a&gt;: Creates a hyper link to another page. </li>
+                    <li>&lt;a&gt;: Embeds an image in the document.</li>
+                </ul>
+            </section>  
+            <section id="css_basics" class="main-section">
+                <header>CSS Basics</header>
+                <p>CSS or Cascading Style Sheets,is used to style web pages.It controls colors, fonts, and layouts, enhancing the visual presentation of a webpage.</p>
+                <p>CSS can be applied in three ways: inline, internal (within &lt;style&gt;), and external (linked to a .css file).</p>
+                <code>body { font-family: Arial; }</code>
+                <code>#main { background-color: #f0f0f0; }</code>
+                <ul>
+                    <li>`color` property to change text color.</li>
+                    <li>`margin` property to control the space around an element.</li>
+                </ul>
+            </section>
+            <section id="api_integration" class="main-section">
+                <header>API Integration</header>
+                <p>APIs (Application Programming Interfaces) enable different applications to communicate. Web APIs provide data through HTTP requests.</p>
+                <p>The Fetch API is commonly used to send and receive data from a server.</p>
+                <code>fetch('https://api.example.com/data')</code>
+                <code>.then(response =&gt; response.json())</code>
+                <ul>
+                    <li>Restfuls APIs use HTTP methods like GET, POST, PUT, and DELETE.</li>
+                    <li>Third-party APIs for advanced features integration.</li>
+                </ul>
+            </section>
+            <section id="javascript_fundamentals" class="main-section">
+                <header>JavaScript Fundamentals</header>
+                <p>JavaScript is a programming language used to add interactivity to web pages. It is a dynamic, high-level language.</p>
+                <p>Key features of JavaScript include variables, functions, and DOM manipulation.</p>
+                <code>function greet() { alert('Hello!'); }</code>
+                <code>let name = 'John';</code>
+                <ul>
+                    <li>Variables: `let`, `const`, `var`.</li>
+                    <li>Control structures: `if`, `for`, `while`.</li>
+                </ul>
+            </section>
+            <section id="testing-and-debugging" class="main-section">
+                <header>Testing and Debugging</header>
+                <p>Testing and debugging are crucial to ensure code works as expected. They help find and fix errors in the code.</p>
+                <p>Tools like browser DevTools simplify the debugging process.</p>
+                <code>try { throw new Error('Oops'); } catch (e) { console.error(e); }</code>
+                <code>console.log('Debugging');</code>
+                <ul>
+                    <li>Unit testing with libraries like Jest</li>
+                    <li>Using breakpoints in DevTools.</li>
+                    <li>Form validation to improve user experience.</li>
+                </ul>
+            </section>
+        </main>
+    </body>
+</html>
